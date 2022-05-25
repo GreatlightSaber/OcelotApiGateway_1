@@ -1,0 +1,19 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/user/{action}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/launcher/user/{action}",
+      "UpstreamHttpMethod": [ "GET", "PPST", "PUT" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    
+  }
+}
